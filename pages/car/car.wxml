@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container" wx:if="{{goodsList.length>0}}">
   <view class="goods" wx:for="{{goodsList}}" wx:key="_id">
     <view class="desc">
       <text class="title">{{item.title}}</text>
@@ -17,8 +17,12 @@
       <text>￥{{price}}</text>
     </view>
     <view class="btns">
-      <view class="left">继续添加</view>
+      <view class="left" bindtap="handleScanCode">继续添加</view>
       <view class="right">去结算（{{goodsList.length}}）</view>
     </view>
   </view>
+</view>
+
+<view class="container" wx:else>
+  <button type="default" bindtap="handleScanCode">添加商品</button>
 </view>

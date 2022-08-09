@@ -3,7 +3,8 @@
         "pages/shop/shop",
         "pages/day/day",
         "pages/my/my",
-        "pages/car/car"
+        "pages/car/car",
+        "pages/pay/pay"
     ],
     "window": {
         "backgroundTextStyle": "light",

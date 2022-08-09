@@ -2,10 +2,18 @@
   <i-banner bannerList="{{bannerList}}"></i-banner>
 
 
-  <view class="scan-code">
+  <view class="scan-code" wx:if="{{carList.length<=0}}">
     <view bindtap="handleScanCode">
       <image mode="widthFix" src="../../assets/images/qrcode.png"></image>
       <text>扫码购物</text>
     </view>
+  </view>
+  <view class="scan-code" wx:else>
+    <navigator url="/pages/car/car">
+      <view>
+        <image mode="widthFix" src="../../assets/images/cart.png"></image>
+        <text>去结算({{carList.length}})</text>
+      </view>
+    </navigator>
   </view>
 </view>

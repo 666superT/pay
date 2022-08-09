@@ -1,0 +1,11 @@
+<view class="container">
+  <i-banner bannerList="{{bannerList}}"></i-banner>
+
+
+  <view class="scan-code">
+    <view bindtap="handleScanCode">
+      <image mode="widthFix" src="../../assets/images/qrcode.png"></image>
+      <text>扫码购物</text>
+    </view>
+  </view>
+</view>

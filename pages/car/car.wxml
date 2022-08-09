@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="goods" wx:for="{{goodsList}}" wx:key="_id">
+    <view class="desc">
+      <text class="title">{{item.title}}</text>
+      <text>{{item.description}}</text>
+      <text>￥{{item.price}}</text>
+    </view>
+    <view class="counter">
+      <text bindtap="handleSubNum" data-index="{{index}}">-</text>
+      <text>{{item.num}}</text>
+      <text bindtap="handleAddNum" data-index="{{index}}" class="active">+</text>
+    </view>
+  </view>
+
+  <view class="account">
+    <view class="all">总计：
+      <text>￥{{price}}</text>
+    </view>
+    <view class="btns">
+      <view class="left">继续添加</view>
+      <view class="right">去结算（{{goodsList.length}}）</view>
+    </view>
+  </view>
+</view>

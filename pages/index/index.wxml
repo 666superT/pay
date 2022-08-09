@@ -1,6 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-账号<input type="text" value="{{username}}" bindinput="handleInpChange" data-val="username"/>
-密码<input type="text" value="{{password}}" />
-<button type="primary" bindtap="handleLogin">登录</button>
-</view>

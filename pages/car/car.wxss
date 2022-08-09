@@ -1,0 +1,93 @@
+/* pages/car/car.wxss */
+.goods {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+  height: 200rpx;
+  position: relative;
+}
+
+.goods .desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods .desc text {
+  margin-top: 10rpx;
+}
+
+.goods .desc text:nth-child(2) {
+  color: #ccc;
+}
+
+.goods .desc text:nth-child(3) {
+  color: red;
+}
+
+.counter {
+  position: absolute;
+  right: 10rpx;
+  bottom: 20rpx;
+}
+
+.counter text:nth-child(1),
+.counter text:nth-child(3) {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  border: 1rpx solid orange;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50rpx;
+  color: orange;
+  background: #fff;
+}
+.counter text:nth-child(2){
+  display: inline-block;
+  margin: 0 10rpx;
+  width: 100rpx;
+  height: 50rpx;
+  border: 1rpx solid orange;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 50rpx;
+}
+
+.counter .active {
+  color: #fff !important;
+  background: orange !important;
+}
+
+.account{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.account .all{
+  padding: 20rpx;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.account .all text{
+  color: red;
+}
+
+.account .btns{
+  display: flex;
+  color: #fff;
+  text-align: center;
+}
+
+.account .btns .left{
+  flex: 1;
+  background: orange;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.account .btns .right{
+  height: 100rpx;
+  line-height: 100rpx;
+  flex: 1;
+  background: orangered;
+}

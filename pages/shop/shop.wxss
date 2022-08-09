@@ -1,0 +1,35 @@
+/* pages/shop/shop.wxss */
+.container swiper{
+  height: 400rpx;
+}
+
+.container swiper swiper-item,.container swiper swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+
+.scan-code{
+  display: flex;
+  justify-content: center;
+}
+
+.scan-code view{
+  margin-top: 150rpx;
+  background: orange;
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 50%;
+  border: 20rpx solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.scan-code image{
+  width: 250rpx;
+}
+
+.scan-code text{
+  color: #fff;
+  font-size: 40rpx;
+}
